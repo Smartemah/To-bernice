@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>To Bernice, From My Heart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400&display=swap');
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: #ffe6f0;
       color: #333;
       text-align: center;
-      padding: 50px;
+      padding: 50px 20px;
       overflow-x: hidden;
     }
+
     .container {
       background: white;
-      padding: 40px;
+      padding: 40px 25px;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0,0,0,0.1);
       max-width: 600px;
@@ -22,18 +26,31 @@
       position: relative;
       z-index: 2;
     }
+
     h1 {
+      font-family: 'Great Vibes', cursive;
+      color: #e6005c;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.4em;
       color: #e6005c;
     }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
+
     .buttons {
-      margin-top: 30px;
+      margin-top: 20px;
     }
+
     button {
-      padding: 15px 30px;
+      padding: 14px 28px;
       margin: 10px;
       border: none;
       border-radius: 8px;
@@ -41,29 +58,33 @@
       cursor: pointer;
       transition: all 0.3s ease;
     }
+
     .yes {
       background-color: #e6005c;
       color: white;
     }
+
     .yes:hover {
       background-color: #cc0052;
     }
+
     .no {
       background-color: #cccccc;
     }
+
     .no:hover {
       background-color: #b3b3b3;
     }
+
     #response {
-      margin-top: 40px;
-      font-size: 22px;
+      margin-top: 30px;
+      font-size: 20px;
       font-weight: bold;
       color: #e6005c;
       z-index: 2;
       position: relative;
     }
 
-    /* Heart Confetti Styles */
     .heart {
       color: #e6005c;
       font-size: 24px;
