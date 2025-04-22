@@ -22,52 +22,53 @@
     }
 
     .container {
-      background: rgba(255, 255, 255, 0.88);
-      padding: 50px 35px;
-      border-radius: 20px;
-      box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
-      max-width: 750px;
+      background: rgba(255, 255, 255, 0.92);
+      padding: 25px 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      max-width: 90%;
       text-align: center;
       position: relative;
-      animation: fadeIn 2s ease-in-out;
+      animation: fadeIn 1.5s ease-in-out;
       z-index: 2;
     }
 
     h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 3em;
-      color: #e6005c;
-      margin-bottom: 20px;
-    }
-
-    #message {
-      font-size: 18px;
-      line-height: 1.8;
-      white-space: pre-wrap;
-      text-align: left;
-      border-left: 4px solid #e6005c;
-      padding-left: 15px;
-      min-height: 180px;
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    .buttons {
-      margin-top: 40px;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    .buttons h2 {
-      font-size: 1.6em;
+      font-size: 2.4em;
       color: #e6005c;
       margin-bottom: 15px;
     }
 
+    #message {
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      text-align: left;
+      border-left: 3px solid #e6005c;
+      padding-left: 10px;
+      min-height: 160px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .buttons h2 {
+      font-size: 1.3em;
+      color: #e6005c;
+      margin-bottom: 10px;
+    }
+
     button {
-      padding: 15px 35px;
-      margin: 10px 15px;
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
       border: none;
-      border-radius: 10px;
-      font-size: 17px;
+      border-radius: 8px;
+      font-size: 16px;
       cursor: pointer;
       transition: all 0.3s ease;
       font-weight: bold;
@@ -79,7 +80,7 @@
     }
 
     .yes:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
       background-color: #cc0052;
     }
 
@@ -88,13 +89,13 @@
     }
 
     .no:hover {
-      transform: scale(1.05);
+      transform: scale(1.03);
       background-color: #b3b3b3;
     }
 
     #response {
-      margin-top: 50px;
-      font-size: 22px;
+      margin-top: 30px;
+      font-size: 18px;
       font-weight: bold;
       color: #e6005c;
       z-index: 2;
@@ -103,7 +104,7 @@
 
     .heart {
       color: #e6005c;
-      font-size: 24px;
+      font-size: 20px;
       position: absolute;
       animation: fall 3s linear infinite;
       z-index: 1;
@@ -111,7 +112,7 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(30px); }
+      from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
@@ -123,17 +124,6 @@
       100% {
         opacity: 0;
         transform: translateY(600px) rotate(360deg);
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      .container {
-        padding: 30px 20px;
-      }
-
-      button {
-        width: 100%;
-        margin: 10px 0;
       }
     }
   </style>
@@ -154,9 +144,9 @@
   </div>
 
   <script>
-    const msg = `I know our past wasn't perfect I made mistakes that hurt you, and I’ve carried that regret every day. But since we reconnected, I've felt something new, something deeper. I've grown, and I want nothing more than to be the man you truly deserve.
+    const msg = `I know our past wasn't perfect — I made mistakes that hurt you, and I’ve carried that regret every day. But since we reconnected, I've felt something new, something deeper. I've grown, and I want nothing more than to be the man you truly deserve.
 
-I want to love you with intention, to support you like a king should support his queen, and to cherish every moment we share whether we're laughing, crying, studying, or just existing in each other's space.
+I want to love you with intention, to support you like a king should support his queen, and to cherish every moment we share — whether we're laughing, crying, studying, or just existing in each other's space.
 
 Bernice, I can't change the past, but I can rewrite our future. And I want to write it with you, with all my heart, with full sincerity, and unwavering loyalty.
 
@@ -180,7 +170,7 @@ So, here’s me, being vulnerable, asking from the depths of my heart...`;
     function respond(answer) {
       const response = document.getElementById('response');
       if (answer) {
-        response.innerHTML = "Bernice, I love you so much. I’m beyond happy right now thank you for giving us another chance. I promise to love you right, every single day.";
+        response.innerHTML = "Bernice, I love you so much. I’m beyond happy right now — thank you for giving us another chance. I promise to love you right, every single day.";
         launchHearts();
       } else {
         response.innerHTML = "Nooooooo... <br>😭😭😭😭";
